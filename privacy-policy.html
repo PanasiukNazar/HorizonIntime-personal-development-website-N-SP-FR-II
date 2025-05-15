@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <title>HorizonIntime</title>
+        <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/simplegrid.css" />
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <link rel="stylesheet" href="css/lightcase.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link
+            href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <style>
+            .cookie-wrapper {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                background-color: #f7f7f7;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                max-width: 800px;
+                margin: auto;
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .cookie-wrapper.show {
+                display: flex;
+            }
+
+            .cookie-wrapper i {
+                font-size: 2rem;
+                color: #5c5c5c;
+                text-align: center;
+            }
+
+            .cookie-wrapper h2 {
+                font-size: 1.5rem;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .cookie-wrapper .data p {
+                font-size: 1rem;
+                color: #555;
+                text-align: justify;
+            }
+
+            .cookie-wrapper .data a {
+                color: #1abc9c;
+                text-decoration: underline;
+            }
+
+            .cookie-wrapper .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .cookie-button {
+                background-color: #1abc9c;
+                color: white;
+                border: none;
+                padding: 10px 18px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+            }
+
+            .cookie-button:hover {
+                background-color: #1abc9c;
+            }
+
+            #declineBtn {
+                background-color: #cccccc;
+                color: #333;
+            }
+
+            #declineBtn:hover {
+                background-color: #aaaaaa;
+            }
+        </style>
+    </head>
+    <body id="home">
+        <!-- Header -->
+        <header style="background: #2c2d31" id="top-header" class="header-home">
+            <div class="grid">
+                <div class="col-1-1">
+                    <div class="content">
+                        <div class="logo-wrap">
+                            <a href="index.html" class="logo">HorizonIntime</a>
+                        </div>
+                        <nav class="navigation">
+                            <input type="checkbox" id="nav-button" />
+                            <label for="nav-button" onclick></label>
+                            <ul class="nav-container">
+                                <li>
+                                    <a href="#home" class="current">Accueil</a>
+                                </li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#work">Méthodes</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#pricing">Tarifs</a></li>
+                                <li><a href="#team">Équipe</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <main>
+            <article class="grid">
+                <div class="page__content" style="padding: 120px">
+                    <h1 class="page__title">Politique de Confidentialité</h1>
+                    <h3
+                        id="by-using-the-redvid-app-you-agree-to-the-privacy-policy-given-here"
+                    >
+                        En utilisant l'application Redvid, vous acceptez la
+                        politique de confidentialité décrite ici.
+                    </h3>
+                    <p>
+                        elmoiv a développé l'application Redvid comme une
+                        application soutenue par la publicité. Ce SERVICE est
+                        fourni gratuitement par elmoiv et est destiné à être
+                        utilisé tel quel.
+                    </p>
+                    <p>
+                        Cette page a pour but d'informer les utilisateurs
+                        concernant nos politiques relatives à la collecte, à
+                        l'utilisation et à la divulgation des informations
+                        personnelles si quelqu’un choisit d’utiliser notre
+                        Service dans le cadre de son développement personnel.
+                    </p>
+                    <p>
+                        En utilisant notre Service, vous acceptez la collecte et
+                        l’utilisation des données conformément à cette
+                        politique. Les informations personnelles recueillies
+                        sont utilisées pour améliorer l’expérience de
+                        développement personnel. Nous ne partagerons pas vos
+                        informations avec des tiers sauf dans les cas prévus
+                        dans cette politique de confidentialité.
+                    </p>
+                    <p>
+                        Les termes utilisés dans cette politique de
+                        confidentialité ont le même sens que dans nos Conditions
+                        d’Utilisation, sauf indication contraire dans ce
+                        document.
+                    </p>
+                    <h2 id="information-collection-and-use">
+                        Collecte et Utilisation des Informations
+                    </h2>
+                    <p>
+                        Dans le cadre de votre cheminement personnel, il peut
+                        vous être demandé de fournir certaines informations
+                        personnelles telles que votre nom, votre adresse e-mail
+                        ou une image de profil. Ces données sont utilisées
+                        uniquement pour vous offrir un accompagnement
+                        personnalisé dans votre développement personnel.
+                    </p>
+                    <p>
+                        L’application utilise des services tiers qui peuvent
+                        collecter des données vous concernant à des fins de
+                        suivi et d’analyse.
+                    </p>
+                    <p>
+                        Voici des liens vers les politiques de confidentialité
+                        de ces services tiers utilisés par l'application :
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.com/policies/privacy/"
+                                >Services Google Play</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://support.google.com/admob/answer/6128543?hl=en"
+                                >AdMob</a
+                            >
+                        </li>
+                    </ul>
+                    <h2 id="log-data">Données de Journal</h2>
+                    <p>
+                        Nous souhaitons vous informer que, en cas de problème
+                        lors de l'utilisation du Service, nous recueillons des
+                        données techniques appelées Données de Journal. Ces
+                        données peuvent inclure l'adresse IP de votre appareil,
+                        le nom de l'appareil, la version du système, la
+                        configuration de l'application, la date et l'heure de
+                        votre utilisation et d'autres statistiques utiles à
+                        l'amélioration continue de l'expérience utilisateur.
+                    </p>
+                    <h2 id="cookies">Cookies</h2>
+                    <p>
+                        Les cookies sont de petits fichiers stockés dans la
+                        mémoire de votre appareil et utilisés pour identifier de
+                        manière anonyme les utilisateurs. Ils sont envoyés à
+                        votre navigateur depuis les sites web visités.
+                    </p>
+                    <p>
+                        Ce Service ne fait pas usage direct de cookies.
+                        Toutefois, des bibliothèques tierces intégrées peuvent
+                        les utiliser afin d’optimiser leur service. Vous pouvez
+                        accepter ou refuser ces cookies, mais le refus pourrait
+                        limiter certaines fonctionnalités utiles à votre
+                        développement personnel.
+                    </p>
+                    <h2 id="service-providers">Prestataires de Services</h2>
+                    <p>
+                        Nous pouvons employer des sociétés ou des personnes
+                        tierces pour :
+                    </p>
+                    <ul>
+                        <li>Faciliter notre Service ;</li>
+                        <li>Fournir le Service en notre nom ;</li>
+                        <li>Effectuer des services liés au Service ;</li>
+                        <li>
+                            Analyser l'utilisation de notre Service dans le
+                            cadre du développement personnel.
+                        </li>
+                    </ul>
+                    <p>
+                        Ces tiers ont accès à vos informations personnelles
+                        uniquement pour accomplir les tâches qui leur sont
+                        confiées et sont tenus de ne pas les divulguer ou les
+                        utiliser à d’autres fins.
+                    </p>
+                    <h2 id="security">Sécurité</h2>
+                    <p>
+                        Nous valorisons votre confiance en nous fournissant vos
+                        données personnelles et nous nous efforçons de mettre en
+                        place des moyens acceptables sur le plan commercial pour
+                        les protéger. Néanmoins, aucun système n’est sécurisé à
+                        100 %, et nous ne pouvons garantir une sécurité absolue.
+                    </p>
+                    <h2 id="links-to-other-sites">Liens vers d'Autres Sites</h2>
+                    <p>
+                        Le Service peut contenir des liens vers d'autres sites
+                        non exploités par nous. Nous vous conseillons vivement
+                        de consulter la politique de confidentialité de tout
+                        site externe visité. Nous n’avons aucun contrôle sur ces
+                        sites tiers.
+                    </p>
+                    <h2 id="childrens-privacy">Confidentialité des Enfants</h2>
+                    <p>
+                        Le Service n’est pas destiné aux enfants de moins de 13
+                        ans. Nous ne recueillons pas sciemment d'informations
+                        personnelles d'enfants. Si un parent ou tuteur découvre
+                        que son enfant nous a fourni des informations
+                        personnelles, veuillez nous contacter afin que nous
+                        puissions supprimer les données concernées.
+                    </p>
+                    <h2 id="changes-to-this-privacy-policy">
+                        Modifications de cette Politique de Confidentialité
+                    </h2>
+                    <p>
+                        Nous pouvons mettre à jour cette politique de
+                        confidentialité à tout moment. Il est conseillé de la
+                        consulter régulièrement. Toute modification sera publiée
+                        sur cette page.
+                    </p>
+                    <p>
+                        Cette politique est en vigueur depuis le 13 novembre
+                        2021.
+                    </p>
+                </div>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer class="wrap">
+            <div class="grid grid-pad">
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>À Propos de Nous</h3>
+                            <div class="textwidget">
+                                <p>
+                                    Nous sommes une équipe passionnée dédiée à
+                                    votre bien-être personnel. Notre mission est
+                                    de vous guider vers un épanouissement
+                                    durable et un équilibre intérieur.
+                                </p>
+                                <br />
+                                <p>
+                                    Grâce à nos ressources, vous pouvez
+                                    explorer, apprendre et grandir chaque jour
+                                    vers une meilleure version de vous-même.
+                                </p>
+                                <p>horizon_intime@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>Articles Récents</h3>
+                            <div class="fwidget">
+                                <ul>
+                                    <li>
+                                        <a href="#0"
+                                            >Trouver son rythme intérieur</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Créer une routine de bien-être</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Développer la pleine conscience</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Renforcer la confiance en soi</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Gérer le stress avec sérénité</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>Informations Utiles</h3>
+                            <div class="textwidget">
+                                <li>
+                                    <a href="privacy-policy.html"
+                                        >Politique de Confidentialité</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="cookie-policy.html"
+                                        >Politique de Cookies</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="terms-of-use.html"
+                                        >Conditions d’Utilisation</a
+                                    >
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>Galerie Inspirante</h3>
+                            <div class="flickr-widget">
+                                <ul class="flickr-list">
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr1.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr2.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr3.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr4.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr5.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr6.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
+
+        <!-- Bannière sur les cookies -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Politique de cookies</h2>
+            </div>
+            <div class="data">
+                <p>
+                    Ce site utilise des cookies pour vous offrir une expérience
+                    optimale dans votre parcours de développement personnel. Ils
+                    nous aident à personnaliser nos contenus et à mieux
+                    comprendre vos besoins pour vous accompagner vers un
+                    équilibre durable. En poursuivant votre navigation, vous
+                    acceptez notre utilisation des cookies conformément à notre
+                    <a href="cookie-policy.html">Politique de cookies</a>.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accepter</button>
+                <button class="cookie-button" id="declineBtn">Refuser</button>
+            </div>
+        </div>
+        <!-- Fin de la bannière sur les cookies -->
+
+        <div class="loader-overlay">
+            <div class="loader">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mixitup.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/owl-carousel/owl.carousel.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/lightcase.min.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>

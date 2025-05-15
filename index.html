@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+        <title>HorizonIntime</title>
+        <link rel="icon" href="images/favicon.png" type="image/gif" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/simplegrid.css" />
+        <link rel="stylesheet" href="css/icomoon.css" />
+        <link rel="stylesheet" href="css/lightcase.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.transitions.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link
+            href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="http://fonts.googleapis.com/css?family=Montserrat:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <style>
+            .cookie-wrapper {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+                background-color: #f7f7f7;
+                border: 1px solid #ddd;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                max-width: 800px;
+                margin: auto;
+                display: none;
+                flex-direction: column;
+                gap: 15px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .cookie-wrapper.show {
+                display: flex;
+            }
+
+            .cookie-wrapper i {
+                font-size: 2rem;
+                color: #5c5c5c;
+                text-align: center;
+            }
+
+            .cookie-wrapper h2 {
+                font-size: 1.5rem;
+                color: #333;
+                margin-top: 10px;
+            }
+
+            .cookie-wrapper .data p {
+                font-size: 1rem;
+                color: #555;
+                text-align: justify;
+            }
+
+            .cookie-wrapper .data a {
+                color: #1abc9c;
+                text-decoration: underline;
+            }
+
+            .cookie-wrapper .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 10px;
+            }
+
+            .cookie-button {
+                background-color: #1abc9c;
+                color: white;
+                border: none;
+                padding: 10px 18px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+            }
+
+            .cookie-button:hover {
+                background-color: #1abc9c;
+            }
+
+            #declineBtn {
+                background-color: #cccccc;
+                color: #333;
+            }
+
+            #declineBtn:hover {
+                background-color: #aaaaaa;
+            }
+        </style>
+    </head>
+    <body id="home">
+        <!-- Header -->
+        <header style="background: #2c2d31" id="top-header" class="header-home">
+            <div class="grid">
+                <div class="col-1-1">
+                    <div class="content">
+                        <div class="logo-wrap">
+                            <a href="index.html" class="logo">HorizonIntime</a>
+                        </div>
+                        <nav class="navigation">
+                            <input type="checkbox" id="nav-button" />
+                            <label for="nav-button" onclick></label>
+                            <ul class="nav-container">
+                                <li>
+                                    <a href="#home" class="current">Accueil</a>
+                                </li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#work">Méthodes</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#pricing">Tarifs</a></li>
+                                <li><a href="#team">Équipe</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Parallax Section -->
+        <div class="parallax-section parallax1">
+            <div class="grid grid-pad">
+                <div class="col-1-1">
+                    <div class="content content-header">
+                        <h2>
+                            Nous sommes HorizonIntime, passionnés de
+                            développement personnel
+                        </h2>
+                        <p>
+                            Bienvenue chez HorizonIntime, votre espace dédié à
+                            la croissance personnelle et à l'épanouissement.
+                            Nous proposons des ressources, des outils et des
+                            accompagnements pour vous aider à mieux vous
+                            connaître, à développer votre potentiel et à
+                            construire une vie alignée avec vos aspirations
+                            profondes. Que vous soyez au début de votre parcours
+                            ou déjà engagé dans votre transformation, notre
+                            plateforme vous guide à chaque étape. Rejoignez une
+                            communauté motivée et bienveillante, explorez les
+                            pratiques de développement personnel modernes et
+                            concrètes, et commencez dès aujourd’hui à
+                            transformer votre vie intérieure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Parallax Section -->
+
+        <!-- CurveUp -->
+        <svg
+            class="curveUpColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+
+        <!-- Services Section -->
+        <div class="wrap services-wrap" id="services">
+            <section class="grid grid-pad services">
+                <h2>Nos services</h2>
+                <div class="col-1-4 service-box service-1">
+                    <div class="content">
+                        <div class="service-icon">
+                            <i class="circle-icon icon-heart4"></i>
+                        </div>
+                        <div class="service-entry">
+                            <h3>Coaching bienveillant</h3>
+                            <p>
+                                Nous offrons des accompagnements personnalisés
+                                en développement personnel. Nos coachs certifiés
+                                vous aident à clarifier vos objectifs, à lever
+                                les blocages internes et à cultiver une
+                                meilleure version de vous-même. Chaque session
+                                est conçue pour favoriser l’épanouissement
+                                personnel dans un cadre de confiance et d’écoute
+                                active.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4 service-box service-2">
+                    <div class="content">
+                        <div class="service-icon">
+                            <i class="circle-icon icon-star4"></i>
+                        </div>
+                        <div class="service-entry">
+                            <h3>Vision claire</h3>
+                            <p>
+                                Nous vous aidons à définir une direction claire
+                                et alignée avec vos valeurs personnelles. Grâce
+                                à des outils de réflexion et de planification,
+                                vous apprendrez à faire des choix en accord avec
+                                vous-même et à bâtir une vie remplie de sens et
+                                de cohérence intérieure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4 service-box service-3">
+                    <div class="content">
+                        <div class="service-icon">
+                            <i class="circle-icon icon-display"></i>
+                        </div>
+                        <div class="service-entry">
+                            <h3>Outils de transformation</h3>
+                            <p>
+                                Nous intégrons des approches modernes telles que
+                                la pleine conscience, la gestion des émotions,
+                                et les techniques de motivation pour faciliter
+                                votre transformation. Nos programmes vous
+                                permettent d’acquérir des compétences pratiques
+                                pour mieux gérer le stress, cultiver l’estime de
+                                soi et renforcer la confiance en vous.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4 service-box service-4">
+                    <div class="content">
+                        <div class="service-icon">
+                            <i class="circle-icon icon-user6"></i>
+                        </div>
+                        <div class="service-entry">
+                            <h3>Suivi personnalisé</h3>
+                            <p>
+                                Votre cheminement est unique. C’est pourquoi
+                                nous proposons un suivi régulier et adapté à
+                                votre évolution. Que ce soit par des bilans, des
+                                sessions individuelles ou des conseils
+                                pratiques, nous restons à vos côtés pour vous
+                                encourager, ajuster vos objectifs et garantir
+                                une croissance continue.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End Services Section -->
+
+        <!-- CurveDown -->
+        <svg
+            class="curveDownColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+
+        <!-- Work Section -->
+        <div class="wrap grey recent-wrap" id="work">
+            <section class="grid grid-pad">
+                <h2>Développements récents</h2>
+                <!-- Start of Filter section -->
+                <div class="col-1-1 mix">
+                    <ul class="filters">
+                        <li class="filter active" data-filter="all">Tout</li>
+                        <li class="filter" data-filter=".illustration">
+                            Illustration
+                        </li>
+                        <li class="filter" data-filter=".web-design">
+                            Conception web
+                        </li>
+                        <li class="filter" data-filter=".photography">
+                            Photographie
+                        </li>
+                    </ul>
+                </div>
+                <!-- End of Filter section -->
+                <div class="portfolio-items">
+                    <div class="col-1-3 mix illustration">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/1-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Illustration</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:illustration"
+                                            title="Croissance personnelle - Illustration"
+                                            href="images/work/1-big.jpg"
+                                            >Développement personnel</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix photography">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/5-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Photographie</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:photography"
+                                            title="Inspiration quotidienne - Photographie"
+                                            href="images/work/5-big.jpg"
+                                            >Équilibre de vie</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix illustration">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/2-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Illustration</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:illustration"
+                                            title="Éveil mental - Illustration"
+                                            href="images/work/2-big.jpg"
+                                            >Conscience de soi</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix photography">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/8-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Photographie</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:photography"
+                                            title="Bien-être et motivation - Photographie"
+                                            href="images/work/8-big.jpg"
+                                            >Objectifs personnels</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix web-design">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/6-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Conception web</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:webdesign"
+                                            title="Minimalisme et clarté - Web Design"
+                                            href="images/work/6-big.jpg"
+                                            >Clarté mentale</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix web-design">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/3-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Illustration</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:illustration"
+                                            title="Organisation de vie - Illustration"
+                                            href="images/work/3-big.jpg"
+                                            >Gestion du temps</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix photography">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/7-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Photographie</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:photography"
+                                            title="Énergie positive - Photographie"
+                                            href="images/work/7-big.jpg"
+                                            >Épanouissement personnel</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix illustration">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/4-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Illustration</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:illustration"
+                                            title="Routine active - Illustration"
+                                            href="images/work/4-big.jpg"
+                                            >Routine productive</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3 mix illustration">
+                        <div class="content">
+                            <div class="recent-work">
+                                <img src="images/work/9-small.jpg" alt="" />
+                                <div class="overlay">
+                                    <span>Conception web</span>
+                                    <h2>
+                                        <a
+                                            class="img-wrap"
+                                            data-rel="lightcase:webdesign"
+                                            title="Passage à l’action - Web Design"
+                                            href="images/work/9-big.jpg"
+                                            >Agir maintenant</a
+                                        >
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End Work Section -->
+
+        <!-- CurveUp -->
+        <svg
+            class="curveUpColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+
+        <!-- Quotes Section -->
+        <div class="wrap services-wrap">
+            <section class="grid grid-pad">
+                <div class="col-1-1 service-box cl-client-carousel-container">
+                    <div class="content">
+                        <div class="cl-client-carousel">
+                            <div class="item client-carousel-item">
+                                <!-- Start of item -->
+                                <div class="quotes-icon">
+                                    <i class="icon-quotes-left"></i>
+                                </div>
+                                <p>
+                                    J'ai adoré collaborer avec Codici Creativi
+                                    Italia pour créer mon programme de
+                                    développement personnel. Leur approche
+                                    personnalisée, leur écoute et leur
+                                    réactivité ont permis de créer une solution
+                                    parfaitement alignée sur mes objectifs.
+                                    Merci pour cette belle expérience !
+                                </p>
+                                <h4>-Julien Morel</h4>
+                            </div>
+                            <!-- End of item -->
+
+                            <div class="item client-carousel-item">
+                                <!-- Start of item -->
+                                <div class="quotes-icon">
+                                    <i class="icon-quotes-left"></i>
+                                </div>
+                                <p>
+                                    Une équipe exceptionnelle ! HorizonIntime
+                                    m'a aidé à structurer mes idées et à
+                                    transformer mes objectifs de croissance
+                                    personnelle en réalité concrète. L’interface
+                                    qu’ils ont conçue est simple, motivante et
+                                    m’accompagne au quotidien dans mon
+                                    évolution.
+                                </p>
+                                <h4>-Claire Dubois</h4>
+                            </div>
+                            <!-- End of item -->
+                            <div class="item client-carousel-item">
+                                <!-- Start of item -->
+                                <div class="quotes-icon">
+                                    <i class="icon-quotes-left"></i>
+                                </div>
+                                <p>
+                                    Codici Creativi Italia a su mettre en œuvre
+                                    une plateforme intuitive pour mon parcours
+                                    de transformation personnelle. Leur
+                                    professionnalisme, leur souci du détail et
+                                    leur engagement ont largement contribué à
+                                    faire de ce projet un succès. Je recommande
+                                    vivement !
+                                </p>
+                                <h4>-Louis Garnier</h4>
+                            </div>
+                            <!-- End of item -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End Quotes Section -->
+
+        <!-- CurveDown -->
+        <svg
+            class="curveDownColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+
+        <!-- Blog Section -->
+        <div class="wrap blog-grid grey" id="blog">
+            <div class="grid grid-pad">
+                <div class="content">
+                    <h2>Notre Blog</h2>
+                    <div class="col-1-2">
+                        <article class="post-wrap">
+                            <div class="post-img">
+                                <a href="#0"
+                                    ><img src="images/post/post-n1.jpg" alt=""
+                                /></a>
+                            </div>
+                            <div class="post">
+                                <h2 class="entry-title">
+                                    <a href="#0"
+                                        >Clés de la Croissance Personnelle</a
+                                    >
+                                </h2>
+                                <div class="post-meta">
+                                    <a href="#0"
+                                        >Date de Publication : 15 mars 2024</a
+                                    >
+                                    <span class="mid-sep">·</span>
+                                    <a href="#0">Développement personnel</a>
+                                </div>
+                                <p>
+                                    Découvrez comment développer une meilleure
+                                    version de vous-même à travers des méthodes
+                                    simples et efficaces. Dans cet article, nous
+                                    partageons des stratégies pour renforcer la
+                                    discipline, la confiance et la motivation
+                                    afin d’atteindre vos objectifs personnels
+                                    <a href="#0">au quotidien</a> quibusdam.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-1-2">
+                        <article class="post-wrap">
+                            <div class="post-img">
+                                <a href="#0"
+                                    ><img src="images/post/post-n2.jpg" alt=""
+                                /></a>
+                            </div>
+                            <div class="post">
+                                <h2 class="entry-title">
+                                    <a href="#0"
+                                        >Techniques pour une Vie Équilibrée</a
+                                    >
+                                </h2>
+                                <div class="post-meta">
+                                    <a href="#0"
+                                        >Date de Publication : 22 mars 2024</a
+                                    >
+                                    <span class="mid-sep">·</span>
+                                    <a href="#0">Développement personnel</a>
+                                </div>
+                                <p>
+                                    Apprenez à mieux gérer votre temps et vos
+                                    priorités pour une vie plus sereine. Cet
+                                    article vous guide pas à pas pour trouver un
+                                    équilibre entre vie personnelle et objectifs
+                                    de croissance, avec des conseils
+                                    <a href="#0">concrets</a> quibusdam.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Blog Section -->
+
+        <!-- CurveUp -->
+        <svg
+            class="curveUpColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+
+        <!-- Pricing Section -->
+        <div class="wrap" id="pricing">
+            <div class="grid grid-pad">
+                <div class="content">
+                    <div class="col-1-1">
+                        <section id="price-tables">
+                            <h2>Plans de Développement Personnel</h2>
+                            <ul id="plans">
+                                <li class="plan">
+                                    <ul class="plan-wrap">
+                                        <li class="title">
+                                            <h2>Découverte</h2>
+                                        </li>
+                                        <li class="price"><p>150$/mois</p></li>
+                                        <li>
+                                            <ul class="options">
+                                                <li>
+                                                    Accès
+                                                    <span
+                                                        >aux modules de
+                                                        base</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    4
+                                                    <span
+                                                        >sessions de coaching
+                                                        collectif</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Plan
+                                                    <span
+                                                        >personnel de
+                                                        croissance</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Ressources
+                                                    <span
+                                                        >en ligne incluses</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Support
+                                                    <span>Email 24/7</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="plan best-plan">
+                                    <ul class="plan-wrap">
+                                        <li class="title">
+                                            <h2 class="best-plan-title">
+                                                Progrès
+                                            </h2>
+                                        </li>
+                                        <li class="price">
+                                            <p class="best-plan-price">
+                                                250$/mois
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <ul class="options">
+                                                <li>
+                                                    Accès complet
+                                                    <span
+                                                        >à tous les
+                                                        programmes</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    8
+                                                    <span
+                                                        >sessions de
+                                                        coaching</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Objectifs
+                                                    <span
+                                                        >personnalisés avec
+                                                        suivi</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Accès
+                                                    <span
+                                                        >à des webinaires
+                                                        exclusifs</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Support
+                                                    <span>Email 24/7</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="plan">
+                                    <ul class="plan-wrap">
+                                        <li class="title">
+                                            <h2>Épanouissement</h2>
+                                        </li>
+                                        <li class="price"><p>350$/mois</p></li>
+                                        <li>
+                                            <ul class="options">
+                                                <li>
+                                                    Accès illimité
+                                                    <span
+                                                        >à tous les modules et
+                                                        contenus</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Sessions
+                                                    <span
+                                                        >individuelles
+                                                        illimitées</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Plan de transformation
+                                                    <span
+                                                        >avec un coach
+                                                        dédié</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Ressources premium
+                                                    <span
+                                                        >et espace membre</span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    Support
+                                                    <span
+                                                        >prioritaire Email
+                                                        24/7</span
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pricing Section -->
+
+        <!-- CurveDown -->
+        <svg
+            class="curveDownColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+
+        <!-- Parallax Section - Counter -->
+        <div class="parallax-section parallax2">
+            <div class="wrap">
+                <section class="grid grid-pad callout">
+                    <div class="col-1-3">
+                        <div class="content">
+                            <div class="info-counter">
+                                <div class="info-counter-row">
+                                    <i class="info-counter-icon icon-mug"></i>
+                                </div>
+                                <div class="info-counter-content">
+                                    <h5 class="info-counter-number">
+                                        <span class="counter">65</span>
+                                        <span class="info-counter-units"
+                                            >Heures</span
+                                        >
+                                    </h5>
+                                    <div class="info-counter-text">
+                                        Temps hebdomadaire consacré à
+                                        l'amélioration personnelle
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-3">
+                        <div class="content">
+                            <div class="info-counter">
+                                <div class="info-counter-row">
+                                    <i class="info-counter-icon icon-embed"></i>
+                                </div>
+                                <div class="info-counter-content">
+                                    <h5 class="info-counter-number">
+                                        <span class="counter">12000</span>
+                                        <span class="info-counter-units"
+                                            >Pages</span
+                                        >
+                                    </h5>
+                                    <div class="info-counter-text">
+                                        Nombre annuel de pages lues sur le
+                                        développement personnel
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-1-3">
+                        <div class="content">
+                            <div class="info-counter">
+                                <div class="info-counter-row">
+                                    <i
+                                        class="info-counter-icon icon-trophy"
+                                    ></i>
+                                </div>
+                                <div class="info-counter-content">
+                                    <h5 class="info-counter-number">
+                                        <span class="counter">350</span>
+                                        <span class="info-counter-units"
+                                            >Objectifs</span
+                                        >
+                                    </h5>
+                                    <div class="info-counter-text">
+                                        Objectifs personnels atteints cette
+                                        année
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- End Parallax Section -->
+
+        <!-- CurveUp -->
+        <svg
+            class="curveUpColor curveGrey"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+
+        <!-- Team Section -->
+        <div class="wrap team-wrap grey" id="team">
+            <div class="grid grid-pad">
+                <div class="content">
+                    <h2>Notre équipe</h2>
+                    <div class="col-1-4">
+                        <div class="content staff-content">
+                            <div class="recent-work staff-img">
+                                <div class="img-wrap staff-img">
+                                    <img src="images/team/user2.png" alt="" />
+                                </div>
+                                <div class="work-info staff-info">
+                                    <h5>Marc Dubois</h5>
+                                    <span>Coach de vie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="content staff-content">
+                            <div class="recent-work staff-img">
+                                <div class="img-wrap staff-img">
+                                    <img src="images/team/user1.png" alt="" />
+                                </div>
+                                <div class="work-info staff-info">
+                                    <h5>Thomas Lefèvre</h5>
+                                    <span>Motivateur</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="content staff-content">
+                            <div class="recent-work staff-img">
+                                <div class="img-wrap staff-img">
+                                    <img src="images/team/user3.png" alt="" />
+                                </div>
+                                <div class="work-info staff-info">
+                                    <h5>Claire Moreau</h5>
+                                    <span>Spécialiste en bien-être</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="content staff-content">
+                            <div class="recent-work staff-img">
+                                <div class="img-wrap staff-img">
+                                    <img src="images/team/user4.png" alt="" />
+                                </div>
+                                <div class="work-info staff-info">
+                                    <h5>Julien Mercier</h5>
+                                    <span
+                                        >Formateur en développement
+                                        personnel</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Team Section -->
+
+        <!-- CurveUp -->
+        <svg
+            class="curveUpColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+        </svg>
+
+        <!-- Section Contact -->
+        <div class="wrap contact" id="contact">
+            <div class="grid grid-pad">
+                <h2>Contactez-nous</h2>
+
+                <div class="col-12" style="width: 100%">
+                    <div class="content contact-form">
+                        <form class="form">
+                            <input
+                                type="text"
+                                class="comment-name"
+                                placeholder="Nom*"
+                                required
+                            />
+                            <input
+                                type="email"
+                                class="comment-email"
+                                placeholder="Email*"
+                                required
+                            />
+                            <input
+                                type="text"
+                                class="comment-subject"
+                                placeholder="Sujet"
+                            />
+                            <textarea
+                                class="required comment-text"
+                                placeholder="Message..."
+                                required
+                            ></textarea>
+                            <input
+                                type="submit"
+                                value="Envoyer le message"
+                                class="btn submit comment-submit"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Section Contact -->
+
+        <!-- CurveDown -->
+        <svg
+            class="curveDownColor"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="100%"
+            height="100"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+        >
+            <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+        </svg>
+
+        <!-- Footer -->
+        <footer class="wrap">
+            <div class="grid grid-pad">
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>À Propos de Nous</h3>
+                            <div class="textwidget">
+                                <p>
+                                    Nous sommes une équipe passionnée dédiée à
+                                    votre bien-être personnel. Notre mission est
+                                    de vous guider vers un épanouissement
+                                    durable et un équilibre intérieur.
+                                </p>
+                                <br />
+                                <p>
+                                    Grâce à nos ressources, vous pouvez
+                                    explorer, apprendre et grandir chaque jour
+                                    vers une meilleure version de vous-même.
+                                </p>
+                                <p>horizon_intime@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>Articles Récents</h3>
+                            <div class="fwidget">
+                                <ul>
+                                    <li>
+                                        <a href="#0"
+                                            >Trouver son rythme intérieur</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Créer une routine de bien-être</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Développer la pleine conscience</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Renforcer la confiance en soi</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            >Gérer le stress avec sérénité</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>Informations Utiles</h3>
+                            <div class="textwidget">
+                                <li>
+                                    <a href="privacy-policy.html"
+                                        >Politique de Confidentialité</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="cookie-policy.html"
+                                        >Politique de Cookies</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="terms-of-use.html"
+                                        >Conditions d’Utilisation</a
+                                    >
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-4">
+                    <div class="content">
+                        <div class="footer-widget">
+                            <h3>Galerie Inspirante</h3>
+                            <div class="flickr-widget">
+                                <ul class="flickr-list">
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr1.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr2.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr3.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr4.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr5.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#0"
+                                            ><img
+                                                src="images/flickr-widget/flickr6.jpg"
+                                                alt=""
+                                        /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- Bannière sur les cookies -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Politique de cookies</h2>
+            </div>
+            <div class="data">
+                <p>
+                    Ce site utilise des cookies pour vous offrir une expérience
+                    optimale dans votre parcours de développement personnel. Ils
+                    nous aident à personnaliser nos contenus et à mieux
+                    comprendre vos besoins pour vous accompagner vers un
+                    équilibre durable. En poursuivant votre navigation, vous
+                    acceptez notre utilisation des cookies conformément à notre
+                    <a href="cookie-policy.html">Politique de cookies</a>.
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Accepter</button>
+                <button class="cookie-button" id="declineBtn">Refuser</button>
+            </div>
+        </div>
+        <!-- Fin de la bannière sur les cookies -->
+
+        <div class="loader-overlay">
+            <div class="loader">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mixitup.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/owl-carousel/owl.carousel.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/lightcase.min.js"></script>
+        <script src="js/cookiebanner.js"></script>
+    </body>
+</html>
